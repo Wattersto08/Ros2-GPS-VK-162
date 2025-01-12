@@ -66,10 +66,4 @@ def getGPS(device):
             if lines[0] == "GPGGA":
                 return printLite(lines)
         else:
-            return 0.0, 0.0, 0.0      
-
-
-
-if __name__ == '__main__':
-    print(getGPS('/dev/ttyACM0'))
-
+            return 0.0, 0.0, 0.0    
